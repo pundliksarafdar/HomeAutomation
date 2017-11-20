@@ -1,0 +1,12 @@
+<table class="table">
+	<thead class="thead-default">
+		<tr><th>Status</th><th>Switch</th><th></th></tr>
+	</thead>
+	<tbody>
+	<tr *ngFor="let rasPiHardware of rasPiHardwares">
+		<td><img height="15px" src="assets/online.png"></td>
+		<td><a class="nav-link active" href="/details/{{ rasPiHardware.deviceId }}">{{ rasPiHardware.givenName?rasPiHardware.givenName:rasPiHardware.deviceId }}</a></td>
+		<td><a href="/settings/{{ rasPiHardware.deviceId }}"><img height="15px" src="assets/settings.png"/></a></td>
+	</tr>
+	</tbody>
+</table>

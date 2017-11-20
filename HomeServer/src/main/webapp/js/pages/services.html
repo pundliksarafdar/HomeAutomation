@@ -1,0 +1,61 @@
+<div id="apiTesting-services">
+<!-- Modal -->
+<div class="modal fade" id=apiTesting-services-modal tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        	<p>
+			  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseRequest" aria-expanded="true" aria-controls="collapseRequest">Request</button>
+			  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseResponse" aria-expanded="false" aria-controls="collapseResponse">Response</button>
+			  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseParameters" aria-expanded="false" aria-controls="collapseParameters">Parameter</button>
+			</p>
+			<div class="collapse show" id="collapseRequest">
+			  <div class="card card-body">
+			    <h3>Request</h3>
+			    <textarea id="apiTesting-services-request" class="form-control"></textarea>
+			  </div>
+			</div>
+			<br/>
+			<div class="collapse" id="collapseResponse">
+			  <div class="card card-body">
+			    <h3>Response</h3>
+			    <h6>Service response</h6>
+			    <textarea id="apiTesting-services-response-service"  class="form-control"></textarea>
+			    <h6>Expected response</h6>
+			    <textarea id="apiTesting-services-response-expected"  class="form-control"></textarea>
+			  </div>
+			</div>
+			<br/>
+			<div class="collapse" id="collapseParameters">
+			  <div class="card card-body">
+			    <h3>Parameter</h3>
+			    <p id="apiTesting-services-parameter-url"></p>
+			    <label id="apiTesting-services-parameter-query">Query paramater</label>
+			    <section id="apiTesting-services-parameter-query-section"></section>
+			    <hr/>
+			    <label id="apiTesting-services-parameter-path">Path paremeter</label>
+			    <section id="apiTesting-services-parameter-path-section"></section>
+			  </div>
+			</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="saveChange">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<table id="apiTesting-services-table" class="table">
+	<thead class="thead-default">
+		<tr><th>Enable</th><th>Service name</th><th>Service path</th><th>Type</th></tr>
+	</thead>
+	<tbody>
+	</tbody>
+</table>
+</div>

@@ -1,0 +1,23 @@
+<div class="fluid-continer">
+<div class="row">
+	<div class="col">
+		<div class="alert alert-primary" role="alert"><b>{{deviceId}}</b></div>
+			<table class="table">
+			<thead>
+				<tr><th>Switch</th><th>Status</th></tr>
+			</thead>
+			<tbody>
+			<tr *ngFor="let switchName of switchNames">
+			  <td>{{switchName}}</td>
+			  <td>
+				<label class="switch">
+					<input type="checkbox" name="{{switchName}}" (change)="onSwitchChange($event)" [checked]="rasPiDetails[switchName]=='ON'?'checked':''"/>
+					<span class="slider"></span>
+				</label>	
+				</td>
+			</tr>
+			</tbody>
+			</table>
+	</div>
+</div>
+</div>
